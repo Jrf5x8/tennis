@@ -24,7 +24,7 @@
 	$loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
 	
 	if ($loggedIn) {
-		header("Location: page1.php");
+		header("Location: home.php");
 		exit;
 	}
 
