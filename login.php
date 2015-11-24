@@ -5,6 +5,7 @@
     </head>
     <body>
         <form action="do_login.php" method="POST">
+            <input type="hidden" name="action" value="do_login">
             <p>Username:</p>
             <input name="username" type="text">
             <p>Password:</p>

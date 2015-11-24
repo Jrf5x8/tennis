@@ -8,8 +8,8 @@
 	}
 	
 
-    print_r($_POST);
-    print $_POST['username'];
+//    print_r($_POST);
+//    print $_POST['username'];
 
 
 	if(!session_start()) {
@@ -28,11 +28,21 @@
 		exit;
 	}
 
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    print "The username is: $username";
+	$action = empty($_POST['action']) ? '' : $_POST['action'];
+	
+	if ($action == 'do_login') {
+		handle_login();
+	} else {
+		login_form();
+	}
+	
+	function handle_login() {
+		$username = empty($_POST['username']) ? '' : $_POST['username'];
+		$password = empty($_POST['password']) ? '' : $_POST['password'];
+        
+        print "the username is $username ";
+        
+    }
 //
 //    require_once db.conf;
 //
