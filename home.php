@@ -1,4 +1,4 @@
 <?php 
     session_start();
-    print "<h1> Welcome $_SESSION['loggedin'] </h1>";
+    print "<h1> Welcome </h1>";
 ?>
