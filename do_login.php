@@ -55,14 +55,13 @@
         $match = $mysqliResult->num_rows;
         $mysqliResult->close();
         $mysqli->close();
-    }
 
-    if($match == 1){
-        $_SESSION['loggedin'] = $username;
-        header("Location: home.php");
-        exit;
+        if($match == 1){
+            $_SESSION['loggedin'] = $username;
+            header("Location: home.php");
+            exit;
+        }
     }
-
 
         
     
