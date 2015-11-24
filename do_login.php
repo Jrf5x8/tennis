@@ -50,7 +50,7 @@
     $query =  "SELECT * FROM users";
     $mysqliResult = $mysqli->query($query);
 
-    print $mysqliResult;
+    print_r($mysqliResult);
         
     
 
