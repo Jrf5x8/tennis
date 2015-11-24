@@ -27,7 +27,7 @@
 
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-    if(mysqli->connect_error){
+    if($mysqli->connect_error){
         $error = 'Error: ' . $mysqli->connect_errno . ' ' . $mysqli->connect_error;
         require "login_form.php";
         exit;
