@@ -47,8 +47,10 @@
     $username = $mysqli->real_escape_string($username);
     $password = $mysqli->real_escape_string($password);
        
-    print "the username is $username";
-            
+    $query =  "SELECT * FROM users";
+    $mysqliResult = $mysqli->query($query);
+
+    print $mysqliResult;
         
     
 
