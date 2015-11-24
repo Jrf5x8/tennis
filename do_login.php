@@ -49,7 +49,7 @@
        
     $query =  "SELECT username, password FROM users WHERE username = $username AND password = $password";
     $mysqliResult = $mysqli->query($query);
-    //print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
+    print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
 
     if($mysqliResult){
         $match = $mysqliResult->num_rows;
