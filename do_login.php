@@ -47,7 +47,7 @@
     $username = $mysqli->real_escape_string($username);
     $password = $mysqli->real_escape_string($password);
        
-    $query =  "SELECT username, password FROM users WHERE username = $username AND password = $password";
+    $query =  "SELECT * FROM users WHERE username = $username AND password = $password";
     $mysqliResult = $mysqli->query($query);
     print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
 
