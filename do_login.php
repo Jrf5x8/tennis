@@ -56,6 +56,7 @@
         $mysqliResult->close();
         $mysqli->close();
 
+        print "The match is $match";
         if($match == 1){
             $_SESSION['loggedin'] = $username;
             header("Location: home.php");
