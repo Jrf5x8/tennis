@@ -47,9 +47,21 @@
     $username = $mysqli->real_escape_string($username);
     $password = $mysqli->real_escape_string($password);
        
-    $query =  "SELECT * FROM users";
+    $query =  "SELECT username, password FROM users WHERE username = $username AND password = $password";
     $mysqliResult = $mysqli->query($query);
-    print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
+    //print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
+
+    if($mysqliResult){
+        $match = $mysqliResult->num_rows;
+        $mysqliResult->close();
+        $mysqli->close();
+    }
+
+    if($match == 1){
+        $_SESSION['loggedin'] = $username;
+        header("Location: home.php");
+        exit;
+    }
 
 
         
