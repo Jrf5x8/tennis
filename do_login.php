@@ -4,12 +4,12 @@
     print $_POST['username'];
 
      //HTTPS redirect
-    if ($_SERVER['HTTPS'] !== 'on') {
-		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-		header("Location: $redirectURL");
-		exit;
-	}
-	
+//    if ($_SERVER['HTTPS'] !== 'on') {
+//		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+//		header("Location: $redirectURL");
+//		exit;
+//	}
+//	
 	if(!session_start()) {
 		// If the session couldn't start, present an error
 		header("Location: error.php");
