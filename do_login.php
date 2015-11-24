@@ -49,8 +49,9 @@
        
     $query =  "SELECT * FROM users";
     $mysqliResult = $mysqli->query($query);
+    print_R(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC);
 
-    print_r($mysqliResult);
+
         
     
 
