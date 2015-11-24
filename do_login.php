@@ -49,7 +49,7 @@
        
     $query =  "SELECT * FROM users";
     $mysqliResult = $mysqli->query($query);
-    print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC);
+    print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
 
 
         
