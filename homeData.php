@@ -10,7 +10,7 @@
         exit;
     }
 
-    $query = "SELECT * FROM tournaments";
+    $query = "SELECT name FROM tournaments";
 
     $mysqliResult = $mysqli->query($query);
 
