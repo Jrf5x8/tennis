@@ -14,16 +14,12 @@
 
     $mysqliResult = $mysqli->query($query);
 
-    //print json_encode(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
+    $result = {"tournaments": . json_encode(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC))};
+
+    print $result;
 
     //print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
 
-
-    $rows = array();
-    while($r = mysqli_fetch_assoc($mysqliResult)) {
-        $rows[] = $r;
-    }
-    print json_encode($rows);
 
 
 
