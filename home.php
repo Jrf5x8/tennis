@@ -11,7 +11,7 @@
         <script>
             $(function(){
                 $.get("homeData.php", function(data){
-                    $('#test').html(data);
+                    $('#test').html(data[0].name);
                 });
             });
                     
