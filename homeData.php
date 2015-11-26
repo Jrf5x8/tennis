@@ -13,9 +13,9 @@
     $query = "SELECT name FROM tournaments";
 
     $mysqliResult = $mysqli->query($query);
+    header('Content-Type: application/json');
 
     $result = {"tournaments": . json_encode(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC))};
-    header('Content-Type: application/json');
 
     print $result;
 
