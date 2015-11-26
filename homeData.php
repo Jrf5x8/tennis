@@ -15,6 +15,7 @@
     $mysqliResult = $mysqli->query($query);
 
     $result = {"tournaments": . json_encode(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC))};
+    header('Content-Type: application/json');
 
     print $result;
 
