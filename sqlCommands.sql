@@ -91,5 +91,6 @@ INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VAL
 
 
 INSERT INTO tournaments (name, addrID, director, date) VALUES ('Columbia Open', 8, 1, '2014-08-13');
+INSERT INTO tournaments (name, addrID, director, date) VALUES ('KC Open', 8, 1, '2015-08-13');
 INSERT INTO tournamentdirectors(id, tournID) VALUES (1, 1);
 INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 3, 2, '6-4 6-1');
