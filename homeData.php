@@ -14,7 +14,9 @@
 
     $mysqliResult = $mysqli->query($query);
 
-    print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
+    print json_encode($mysqliResult);
+
+    //print_r(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
 
 
 
