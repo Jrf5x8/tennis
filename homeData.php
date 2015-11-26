@@ -13,7 +13,7 @@
     $query = "SELECT name FROM tournaments";
 
     $mysqliResult = $mysqli->query($query);
-    //header('Content-Type: application/json');
+    header('Content-Type: application/json');
 
     $result = json_encode(mysqli_fetch_all($mysqliResult,MYSQLI_ASSOC));
 
