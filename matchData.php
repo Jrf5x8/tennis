@@ -11,6 +11,7 @@
     }
     session_start();
     $username = $_SESSION['loggedin'];
+    console.log($username);
     $getPlayerID = "SELECT id FROM person WHERE fname = '$username'";
     $playerID = $mysqli->query($getPlayerID);
     console.log($playerID);
