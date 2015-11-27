@@ -19,9 +19,12 @@
                     console.log(data);
                     var tourns = "";
                     for(var d in data){
-                        tourns += data[d]["name"]
+                        var li = $("<li>");
+                        li.html(data[d]["name"]);
+                        $("#test ul").append(li);
                     }
-                    $('#test').html(tourns);
+
+                    //$('#test').html(tourns);
 
                 });
             });
