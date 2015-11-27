@@ -5,7 +5,7 @@
     </head>
     <body>
        <?php
-            session_start();
+            //session_start();
             //require "do_login.php";
             if(!empty($_SESSION['error'])){
                 print $_SESSION['error'];
