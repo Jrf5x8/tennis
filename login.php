@@ -5,7 +5,7 @@
     </head>
     <body>
        <?php
-
+            session_start();
             if(S_SESSION['error']){
                 print $_SESSION['error'];
             }
