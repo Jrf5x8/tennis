@@ -4,6 +4,13 @@
         <title></title>
     </head>
     <body>
+       <?php
+
+            if(S_SESSION['error']){
+                print $_SESSION['error'];
+            }
+
+        ?>
         <form action="do_login.php" method="POST">
             <input type="hidden" name="action" value="do_login">
             <p>Username:</p>
