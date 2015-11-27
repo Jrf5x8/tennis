@@ -16,7 +16,7 @@
         <script>
             $(function(){
                 $.get("homeData.php", function(data){
-                    print data;
+                    $("#test").append(data);
                     for(var d in data){
                         $tourns += data[d]["name"]
                     }
