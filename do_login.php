@@ -64,7 +64,7 @@
         }else{
             $error = "Incorrect username or password";
             $_SESSION['error'] = $error;
-            header("Location: login.php");
+            require "login.php";
             exit;
         }
     }

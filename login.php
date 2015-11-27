@@ -15,7 +15,7 @@
         <form action="do_login.php" method="POST">
             <input type="hidden" name="action" value="do_login">
             <p>Username:</p>
-            <input name="username" type="text" value="<?php session_start(); print empty($_POST['username']) ? '' : $_POST['username']; ?>">
+            <input name="username" type="text" value="<?php print empty($_POST['username']) ? '' : $_POST['username']; ?>">
             <p>Password:</p>
             <input name="password" type="password">
             <input type="submit" value="Submit">
