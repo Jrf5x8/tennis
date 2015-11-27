@@ -16,7 +16,11 @@
         <script>
             $(function(){
                 $.get("homeData.php", function(data){
-                    $('#test').html(data[0]["name"]);
+                    for(var d in data){
+                        $tourns += data[d]["name"]
+                    }
+                    $('#test').html($tourns);
+
                 });
             });
                     

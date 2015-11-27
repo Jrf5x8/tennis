@@ -60,6 +60,14 @@ CREATE TABLE matches (
     FOREIGN KEY(winner) REFERENCES person(id)
 );
 
+CREATE TABLE tournamentPlayers(
+    playerID INT,
+    tournID INT,
+    PRIMARY KEY(playerID, tournID),
+    FOREIGN KEY(playerID) REFERENCES person(id),
+    FOREIGN KEY(tournID) REFERENCES tournaments(id)
+);
+
 
 INSERT INTO users (username, password) VALUES ('phil', 'test');
 INSERT INTO users (username, password) VALUES ('Jack', 'test');
@@ -84,7 +92,7 @@ INSERT INTO addresses (street, city, state, zipcode) VALUES ('Woodrail', 'Columb
 INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Phil', 'Baillos', '5731112222', 1, 1, 0);
 INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Jack', 'Fay', '5734246735', 2, 0, 1);
 INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Daniel', 'Liu', '5731112223', 3, 0, 1);
-INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Ford', 'Zitsch', '5731112224', 4, , 1);
+INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Ford', 'Zitsch', '5731112224', 4, 0, 1);
 INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Jacob', 'Winton', '5731112225', 5, 0, 1);
 INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Billy', 'Swift', '5731112226', 6, 0, 1);
 INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VALUES ('Alex', 'Jones', '5731112227', 7, 0, 1);
@@ -93,4 +101,14 @@ INSERT INTO person (fname, lname, phoneNumber, addrID, isDirector, isPlayer) VAL
 INSERT INTO tournaments (name, addrID, director, date) VALUES ('Columbia Open', 8, 1, '2014-08-13');
 INSERT INTO tournaments (name, addrID, director, date) VALUES ('KC Open', 8, 1, '2015-08-13');
 INSERT INTO tournamentdirectors(id, tournID) VALUES (1, 1);
+INSERT INTO tournamentPlayers VALUES(2, 1);
+INSERT INTO tournamentPlayers VALUES(2, 2);
+INSERT INTO tournamentPlayers VALUES(3, 1);
+INSERT INTO tournamentPlayers VALUES(4, 1);
+INSERT INTO tournamentPlayers VALUES(5, 1);
+INSERT INTO tournamentPlayers VALUES(6, 1);
+INSERT INTO tournamentPlayers VALUES(7, 1);
 INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 3, 2, '6-4 6-1');
+
+#shows tournament name and players
+SELECT fname, tournaments.name FROM person JOIN tournaments JOIN tournamentplayers WHERE tournamentplayers.playerID = person.ID AND tournaments.id = tournamentPlayers.tournID;
