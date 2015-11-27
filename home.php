@@ -20,7 +20,7 @@
                     var tourns = "";
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"#\">" . data[d]["name"] . <"</a>");
+                        li.html("<a href=\"#\">" + data[d]["name"] + <"</a>");
                         $("#test ul").append(li);
                     }
 
