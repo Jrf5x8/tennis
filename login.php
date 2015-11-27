@@ -8,7 +8,7 @@
             session_start();
             //require "do_login.php";
             if(!empty($_SESSION['error'])){
-                print $error;
+                print $_SESSION['error'];
             }
 
         ?>
