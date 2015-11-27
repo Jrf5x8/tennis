@@ -7,7 +7,7 @@
        <?php
             //session_start();
             //require "do_login.php";
-            if($error != ""){
+            if($error){
                 print $error;
             }
 
