@@ -6,7 +6,7 @@
     <body>
        <?php
             session_start();
-            if(S_SESSION['error']){
+            if($_SESSION['error']){
                 print $_SESSION['error'];
             }
 
