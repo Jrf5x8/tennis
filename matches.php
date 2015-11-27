@@ -15,12 +15,12 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
             $(function(){
-                $.get("homeData.php", function(data){
+                $.get("matchData.php", function(data){
                     console.log(data);
                     var tourns = "";
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>");
+                        li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
                         $("#test ul").append(li);
                     }
 

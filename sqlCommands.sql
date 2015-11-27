@@ -109,6 +109,25 @@ INSERT INTO tournamentPlayers VALUES(5, 1);
 INSERT INTO tournamentPlayers VALUES(6, 1);
 INSERT INTO tournamentPlayers VALUES(7, 1);
 INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 3, 2, '6-4 6-1');
+INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 4, 2, '6-4 6-1');
+INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 5, 2, '6-4 6-1');
+INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 6, 2, '6-4 6-1');
+
+#just selects the opponent
+SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = 2;
+
+
 
 #shows tournament name and players
 SELECT fname, tournaments.name FROM person JOIN tournaments JOIN tournamentplayers WHERE tournamentplayers.playerID = person.ID AND tournaments.id = tournamentPlayers.tournID;
+
+
+#select matches for a given player
+SELECT fname, player2 FROM person JOIN matches ON person.id = matches.player1;
+
+SELECT player2 FROM matches WHERE player1 = 2;
+
+SELECT fname FROM person WHERE id = (SELECT player2 FROM matches WHERE player1 = 2);
+
+
+
