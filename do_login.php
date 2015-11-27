@@ -62,8 +62,8 @@
             header("Location: home.php");
             exit;
         }else{
-            $_SESSION['error'] = "Incorrect username or password";
-            header("Location: login.php");
+            $error = "Incorrect username or password";
+            require "login.php";
             exit;
         }
     }
