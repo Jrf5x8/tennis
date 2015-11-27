@@ -28,8 +28,10 @@
 		exit;
 	}
 
+	$action = empty($_POST['action']) ? '' : $_POST['action'];
 
-    if($_POST['action'] == "do_login"){
+
+    if($action == "do_login"){
         handle_login();
     }else{
         login_form();
