@@ -5,6 +5,7 @@
     </head>
     <body>
        <?php
+            require "do_login.php";
             if($error){
                 print $error;
             }
