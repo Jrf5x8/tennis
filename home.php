@@ -17,10 +17,11 @@
             $(function(){
                 $.get("homeData.php", function(data){
                     console.log(data);
+                    var tourns = "";
                     for(var d in data){
-                        $tourns += data[d]["name"]
+                        tourns += data[d]["name"]
                     }
-                    $('#test').html($tourns);
+                    $('#test').html(tourns);
 
                 });
             });
