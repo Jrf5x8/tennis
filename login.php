@@ -5,7 +5,6 @@
     </head>
     <body>
        <?php
-            session_start();
             if($error){
                 print $error;
             }
