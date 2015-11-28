@@ -34,6 +34,7 @@
     <body>
         <div>
             <div id="test">
+                <h1>Please Click on Your Opponent</h1>
                 <ul id="tournamentList">
                     
                 </ul>
