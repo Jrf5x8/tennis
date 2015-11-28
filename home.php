@@ -21,6 +21,10 @@
                     for(var d in data){
                         var li = $("<li>");
                         li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>");
+                            li.click(function(){
+                                var data = {tourny : li.text()};
+                                $.get("matchData.php", data)
+                            }
                         $("#test ul").append(li);
                     }
 
