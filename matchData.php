@@ -19,8 +19,10 @@
 
     $result = json_encode(mysqli_fetch_all($opponents,MYSQLI_ASSOC));
 
-    print $result;
+    
     $result->close();
     $mysqli->close();
+
+    print $result;
 
 ?>
