@@ -17,7 +17,6 @@
             $(function(){
                 $.get("matchData.php", function(data){
                     console.log(data);
-                    var tourns = "";
                     for(var d in data){
                         var li = $("<li>");
                         li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");

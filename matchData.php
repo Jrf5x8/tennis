@@ -20,8 +20,8 @@
     $result = json_encode(mysqli_fetch_all($opponents,MYSQLI_ASSOC));
 
     
-    $result->close();
-    $mysqli->close();
+//    $result->close();
+//    $mysqli->close();
 
     print $result;
 
