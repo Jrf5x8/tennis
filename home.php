@@ -24,7 +24,7 @@
                             li.click(function(){
                                 var data = {tourny : li.text()};
                                 $.get("matchData.php", data)
-                            }
+                            });
                         $("#test ul").append(li);
                     }
 
