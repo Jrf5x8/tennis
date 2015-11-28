@@ -12,7 +12,7 @@
     session_start();
     //get username
     $username = $_SESSION['loggedin'];
-    $idQuery = "SELECT id FROM person WHERE name = '$username'";
+    $idQuery = "SELECT id FROM person WHERE name = 'Jack'";
     $idResult = $mysqli->query($idQuery);
     $id = $idResult->fetch_object();
     $idResult->close();
