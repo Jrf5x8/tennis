@@ -13,7 +13,7 @@
     //get username
     $username = $_SESSION['loggedin'];
 
-    $query = "SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = '$id->id'";
+    $query = "SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = (SELECT id FROM person WHERE name =          '$username')";
     $opponents = $mysqli->query($query);
     header('Content-Type: application/json');
 
