@@ -20,6 +20,7 @@
                     for(var d in data){
                         var li = $("<li>");
                         li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
+                        console.loig(li.html);
                         $("#test ul").append(li);
                     }
 
