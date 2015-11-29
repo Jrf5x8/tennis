@@ -19,17 +19,17 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>");
+                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
+                        .click(function(){
+                            $.get("matches.php", {tourney:"CCMO"});
+                        });
                         $("#test ul").append(li);
                     }
                     
                     });
                     
                     //$('#test').html(tourns);
-                    $("#tournamentList li").click(function(){
-                        $.get("matches.php", "HELLO");
-                    });
-                                               
+              
                                                
 
                 
