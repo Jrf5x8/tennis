@@ -22,7 +22,9 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
+//                        li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
+                        li.html(data[d]["fname"]);
+
                         $("#test ul").append(li);
                     }
 
