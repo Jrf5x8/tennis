@@ -9,7 +9,7 @@
             }
             print '<a href="logout.php">Logout</a>';
             print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>";
-            print json_encode($_GET);
+            print json_encode($_GET['tourney']);
 
         ?>
         
