@@ -7,8 +7,6 @@
                 header("Location: login.php");
                 exit;
             }
-            print '<a href="logout.php">Logout</a>';
-            print json_encode($_GET['tourney']);
 
         ?>
         
