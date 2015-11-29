@@ -26,7 +26,7 @@
                                 $("#test").html(data);
                             });
                         });
-                        $("#test ul").append(li);
+                        $("#tournamentList ul").append(li);
                     }
                     
                     });
