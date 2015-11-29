@@ -12,7 +12,7 @@
     session_start();
     //get username
     $username = $_SESSION['loggedin'];
-    $tourney = $_GET['tourney'];
+    print $tourney = $_GET['tourney'];
     
 
     $query = "SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = (SELECT id FROM person WHERE fname = '$username') AND matches.tournID = (SELECT id FROM tournaments WHERE name = '$tourney')";
@@ -25,6 +25,6 @@
 //    $result->close();
 //    $mysqli->close();
 
-    print $result;
+    //print $result;
 
 ?>
