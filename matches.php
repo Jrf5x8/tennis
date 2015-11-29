@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css.css">
+
        <?php 
             session_start();
             if(!$_SESSION['loggedin']){
