@@ -2,7 +2,7 @@
     
     require_once 'db.conf';
 
-    $tourney = $_GET['tourney'];
+    //$tourney = $_GET['tourney'];
 
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 

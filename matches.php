@@ -15,7 +15,7 @@
         <title>Home Page</title>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
-            $(function(){
+           $(function(){
                 $.get("matchData.php", function(data){
                     console.log(data);
                     for(var d in data){
@@ -23,10 +23,14 @@
                         li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
                         $("#test ul").append(li);
                     }
-
+                    
+                    });
+                    
                     //$('#test').html(tourns);
+              
+                                               
 
-                });
+                
             });
                     
         </script>
