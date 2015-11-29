@@ -12,7 +12,7 @@
     session_start();
     //get username
     $username = $_SESSION['loggedin'];
-    $tourney = $_GET['tourney'];
+    //$tourney = $_GET['tourney'];
     
 
     $query = "SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = 2";
