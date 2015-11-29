@@ -8,7 +8,6 @@
                 exit;
             }
             print '<a href="logout.php">Logout</a>';
-            print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>";
             print json_encode($_GET['tourney']);
 
         ?>
@@ -17,7 +16,7 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
            $(function(){
-                $.get("matchData.php", function(data){
+                $.get("matchData.php", {tourney:<?php print $_GET['tourney']; ?>}, function(data){
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
