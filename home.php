@@ -43,7 +43,7 @@
         </script>
     </head>
     <body>
-        <div>
+        <div id="wrapper">
             <div id="test">
                 <ul id="tournamentList">
                     
