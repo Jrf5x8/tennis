@@ -15,7 +15,7 @@
     //$tourney = $_GET['tourney'];
     
 
-    $query = "SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = 2";
+    $query = "SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = (SELECT id FROM person WHERE fname = '$username')";
     $opponents = $mysqli->query($query);
     header('Content-Type: application/json');
 
