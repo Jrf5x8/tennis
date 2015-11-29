@@ -19,9 +19,12 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
+//                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
+                        li.html(data[d]["name"])
                         .click(function(){
-                            $.get("matches.php", {"tourney": $(this).text()});
+                            $.get("matches.php", {"tourney": $(this).text()}, function(data){
+                                $("#test").html(data);
+                            });
                         });
                         $("#test ul").append(li);
                     }
