@@ -17,20 +17,18 @@
             $(function(){
                 $.get("homeData.php", function(data){
                     console.log(data);
-                    var tourns = "";
                     for(var d in data){
                         var li = $("<li>");
                         li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>");
-   
                         $("#test ul").append(li);
                     }
                     
-                    $("test li").click(function(){
-                        var data = {tourny : li.text()};
-                        $.get("matches.php", data);
-                    });
-
                     //$('#test').html(tourns);
+                    $("#tournamentList li").click(function(){
+                        $.get("matches.php", {tourney: $(this).text()});
+                    });
+                                               
+                                               
 
                 });
             });

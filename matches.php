@@ -8,8 +8,7 @@
                 exit;
             }
             print '<a href="logout.php">Logout</a>';
-            print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>";  
-
+            print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; 
             print_r($_GET);
 
         ?>
@@ -22,9 +21,7 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-//                        li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
-                        li.html(data[d]["fname"]);
-
+                        li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
                         $("#test ul").append(li);
                     }
 
