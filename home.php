@@ -27,7 +27,7 @@
                     
                     //$('#test').html(tourns);
                     $("#tournamentList li").click(function(){
-                        $.get("matches.php", {"tourney": "CCMO"});
+                        $.get("matches.php", "HELLO");
                     });
                                                
                                                
