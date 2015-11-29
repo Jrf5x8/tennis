@@ -18,7 +18,13 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"#\">" + data[d]["fname"] + "</a>");
+                        li.html(data[d]["fname"])
+                        .click(function(){
+                            $.get("scores.php", {"opponent":$(this).text()}, function(data){
+                                $("#test").html(data);
+                            });
+                            
+                        });
                         $("#test ul").append(li);
                     }
                     
