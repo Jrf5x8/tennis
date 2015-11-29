@@ -23,6 +23,8 @@
                         $("#test ul").append(li);
                     }
                     
+                    });
+                    
                     //$('#test').html(tourns);
                     $("#tournamentList li").click(function(){
                         $.get("matches.php", {"tourney": "CCMO"});
@@ -30,7 +32,7 @@
                                                
                                                
 
-                });
+                
             });
                     
         </script>
