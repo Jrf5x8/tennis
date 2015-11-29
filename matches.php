@@ -16,7 +16,7 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
            $(function(){
-                $.get("matchData.php", {"tourney":<?php print $_GET['tourney']; ?>}, function(data){
+                $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
