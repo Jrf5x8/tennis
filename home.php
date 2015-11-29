@@ -21,7 +21,7 @@
                         var li = $("<li>");
                         li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
                         .click(function(){
-                            $.get("matchData.php", {"tourney": $(this).text()});
+                            $.get("matches.php", {"tourney": $(this).text()});
                         });
                         $("#test ul").append(li);
                     }

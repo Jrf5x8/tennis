@@ -8,7 +8,8 @@
                 exit;
             }
             print '<a href="logout.php">Logout</a>';
-            print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; 
+            print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>";
+            print_r($_GET);
 
         ?>
         
