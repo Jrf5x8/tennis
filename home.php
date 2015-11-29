@@ -23,7 +23,7 @@
                         li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>");
                             li.click(function(){
                                 var data = {tourny : li.text()};
-                                $.get("matchData.php", data)
+                                $.get("matches.php", data)
                             });
                         $("#test ul").append(li);
                     }
