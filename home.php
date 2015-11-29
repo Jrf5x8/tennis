@@ -19,7 +19,7 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-                        li.html("<a href=\"<matches.php\">" + data[d]["name"] + "</a>")
+                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
                         .click(function(){
                             console.log($(this).text());
                             $.get("matchData.php", {"tourney": $(this).text()});
