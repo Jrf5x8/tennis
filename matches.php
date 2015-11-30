@@ -27,7 +27,7 @@
                         li.html(data[d]["fname"])
                         .click(function(){
                             $.get("scores.php", {"opponent":$(this).text()});
-                            $("#form").prop("visibility", null);
+                            $("#form").prop("visibility", "visible");
                             
                         });
                         $("#test ul").append(li);
