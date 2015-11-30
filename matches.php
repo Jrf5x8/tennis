@@ -1,20 +1,18 @@
-            "this is seriously retartded if this gets printed"
 
-<!--
 <!doctype html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css.css">
 
           
-        
-//            session_start();
-//            if(!$_SESSION['loggedin']){
-//                header("Location: login.php");
-//                exit;
-//            }
-//            print '<a href="logout.php">Logout</a>';
-               
+        <?php
+            session_start();
+            if(!$_SESSION['loggedin']){
+                header("Location: login.php");
+                exit;
+            }
+            print '<a href="logout.php">Logout</a>';
+        ?>    
         
         
         
@@ -52,4 +50,4 @@
         </div>
     </body>
     
-</html>-->
+</html>
