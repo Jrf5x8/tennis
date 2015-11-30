@@ -20,6 +20,7 @@
         <script>
            $(function(){
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
+                $("#accordion").accordion();
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
                     for(var d in data){
