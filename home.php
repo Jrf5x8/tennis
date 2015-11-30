@@ -45,9 +45,9 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="header"></div>          
+            <div id="header"></div>  
+            <div id="test"><ul></ul></div>        
             <div id="accordion">
-                
             </div>
             <div id="form">
                         <form method="post" action="reportScores.php">
