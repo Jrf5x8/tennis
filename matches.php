@@ -24,10 +24,7 @@
                 $( "#accordion" ).accordion({
                     collapsible: true,
                     active: false,
-                    autoActivate: true,
-                    activate: function(){
-                        $("#opponent").attr("value", $('.ui-accordion-header-active h3').text());
-                    }
+                    autoActivate: true
                 });
             });
   </script>
@@ -55,7 +52,9 @@
                     }
                 });
                
-
+               $("#accordion").click(function(){
+                    $("#opponent").attr("value", $("#form span").text());
+               });
 
            });
                     
