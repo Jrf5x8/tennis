@@ -5,12 +5,12 @@
                 exit;
             }
             print '<a href="logout.php">Logout</a>';
-            print $_GET['tourney'];
+            //print $_GET['tourney'];
                
         ?>
 
 
-<!--<!doctype html>
+<!doctype html>
 <html>
        <head>
        <title>Matches</title>
@@ -51,7 +51,6 @@
     <body>
         <div id="wrapper">
             <div id="header"></div>  
-            <div id="test"><ul></ul></div>        
             <div id="accordion">
             </div>
             <div id="form">
@@ -73,7 +72,8 @@
                             </tr>
                     </form>
                 </div>
+
         </div>
     </body>
-</html>-->
+</html>
 
