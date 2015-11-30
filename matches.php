@@ -83,7 +83,7 @@
                             </tr>
                             <tr>
                                 <td><label for="winner">I won:</label></td>
-                                <td><input type="radio" name="winner"></td>
+                                <td><input type="checkbox" name="winner"></td>
                             </tr>
                             <tr>
                                 <td><input type="submit" value="submit"></td>
