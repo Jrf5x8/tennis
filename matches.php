@@ -53,7 +53,7 @@
                 });
                
                $("#accordion").click(function(){
-                    $("#opponent").attr("value", $("#form span").text());
+                    $("#opponent").attr("value", $("#form span", this).text());
                });
 
            });
