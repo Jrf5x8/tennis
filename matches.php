@@ -23,6 +23,7 @@
             $(function() {
                 $( "#accordion" ).accordion({
                     collapsible: true,
+                    active: false,
                     autoActivate: true
                 });
             });
@@ -51,8 +52,8 @@
                     }
                 });
                
-               $("#accordion").click(function(){
-                    $("#opponent").attr("value", $(this).eq(active).children("h3").text());
+               $("#accordion h3").click(function(){
+                    $("#opponent").attr("value", $(this).eq(active).text());
                });
 
            });
