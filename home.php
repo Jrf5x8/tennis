@@ -19,6 +19,8 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script>
             $(function(){
+                $("#accordion").accordion();
+                $("#form").hide();
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
                 $("#header").append("<p>Please select a tournament to get started</p>");
                 $.get("homeData.php", function(data){
