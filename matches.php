@@ -19,6 +19,8 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
            $(function(){
+                $("#form").hide();
+
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
@@ -27,7 +29,7 @@
                         li.html(data[d]["fname"])
                         .click(function(){
                             $.get("scores.php", {"opponent":$(this).text()});
-                            //$("#form").prop("visibility", "visible");
+                            $("#form").show();
                             
                         });
                         $("#test ul").append(li);
