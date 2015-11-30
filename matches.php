@@ -42,8 +42,6 @@
 
                         h3.html(data[d]["fname"]);
                         $("#form span").html(data[d]["fname"]);
-                        $("#opponent").attr("value", data[d]["fname"]);
-
                         
                         p.html($("#form").html());
 
@@ -53,6 +51,9 @@
                         $("#accordion").accordion("refresh");
                     }
                 });
+               $("#accordion").click(function(){
+                    $("#opponent").attr("value", $(this 'h3').text());
+               });
 
            });
                     
