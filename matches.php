@@ -38,7 +38,7 @@
 //                            
 //                            
 //                        });
-                        div.html($("form span").html());
+                        div.html($("form").html());
 
 
                         $("#accordion").append(h3, div);
