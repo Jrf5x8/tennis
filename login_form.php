@@ -8,7 +8,7 @@
         <title>Login</title>
     </head>
     <body>
-      <div id="wrapper">
+      <div id="loginWidget" class="ui-widget">
            <?php
                 //session_start();
                 //require "do_login.php";
