@@ -32,11 +32,6 @@
                     }
                 });
 
-                $("#scores").submit(function(){
-                    $.post("reportScores.php", $(this).serialize(), function(data){
-                        $("#test").append("<p>" + data + "</p>"); 
-                    });               
-                });
            });
                     
         </script>
