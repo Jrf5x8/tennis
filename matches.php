@@ -54,7 +54,7 @@
                $("#accordion").click(function(){
                     console.log($(".ui-accordion-header-active").text());
                     $("#opponent", this).removeAttr("value");
-                    $("#opponent", this).attr("value", $(".ui-accordion-header-active").text());
+                    $(".ui-accordion-content-active p form #opponent", this).attr("value", $(".ui-accordion-header-active").text());
                    $(this).accordion("refresh");
                 });
            });
