@@ -13,9 +13,13 @@
 <!doctype html>
 <html>
        <head>
+       <meta charset="utf-8">
        <title>Matches</title>
         <link rel="stylesheet" type="text/css" href="css.css">
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">
         <script>
            $(function(){
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
