@@ -1,6 +1,3 @@
-<!doctype html>
-<html>
-    <head>
         <?php 
             session_start();
             if(!$_SESSION['loggedin']){
@@ -10,11 +7,15 @@
             print '<a href="logout.php">Logout</a>';
                
         ?>
-        <link rel="stylesheet" type="text/css" href="css.css">
 
 
-        
+<!doctype html>
+<html>
+    <head>
+
         <title>Home Page</title>
+
+        <link rel="stylesheet" type="text/css" href="css.css">
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css">
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
