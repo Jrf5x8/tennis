@@ -30,6 +30,9 @@
                         .click(function(){
                             $.get("scores.php", {"opponent":$(this).text()});
                             $("#form").show();
+                            $("#form span").html($(this).text());
+                            
+                            
                             
                         });
                         $("#test ul").append(li);
