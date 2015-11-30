@@ -40,6 +40,7 @@
     </head>
     <body>
         <div id="wrapper">
+            <div id="header"></div>
             <div id="test">
                 <ul id="tournamentList">
                     
