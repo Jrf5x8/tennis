@@ -19,7 +19,7 @@
                     </div>
                 <div id="inline">
                     <label for="set2games">2nd Set: </label>
-                    <input type="number" name="set2games" min="0" max="7" maxlength="1" size="3">
+                    <input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"> -
                     <input type="number" name="set2games" min="0" max="7" maxlength="1" size="3">
                 <div id="inline">
                 <input type="submit" value="submit">
