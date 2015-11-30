@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css.css">
 
-       <?php 
+        
 
             "this is seriously retartded if this gets printed"
 //            session_start();
@@ -14,7 +14,7 @@
 //            }
 //            print '<a href="logout.php">Logout</a>';
                
-        ?>
+        
         
         
         <title>Home Page</title>
