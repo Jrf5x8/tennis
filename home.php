@@ -26,9 +26,8 @@
 //                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
                         li.html(data[d]["name"])
                         .click(function(){
-                            $.get("matches.php", {"tourney": $(this).text()}, function(data){
-                                $("#test").html(data);
-                            });
+                            $.get("matches.php", {"tourney": $(this).text()});
+                            window.location("matches.php");
                         });
                         $("#test ul").append(li);
                     }
