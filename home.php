@@ -18,6 +18,7 @@
         <script>
             $(function(){
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
+                $("#header").append("<p>Please select a tournament to get started</p>");
                 $.get("homeData.php", function(data){
                     console.log(data);
                     for(var d in data){
