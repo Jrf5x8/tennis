@@ -29,13 +29,13 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-//                        li.html("<a href=\"matches.php\">" + data[d]["name"] + "</a>")
-                        li.html(data[d]["name"])
-                        .click(function(){
-                            $.get("matches.php", {"tourney": $(this).text()});
-                            <?php $_GET['tourney'] = "CCMO";?>
-                            window.location.href = "matches.php";
-                        });
+                        li.html("<a href=\"matches.php?tourney=\">" + data[d]["name"] + "</a>");
+//                        li.html(data[d]["name"]);
+//                        .click(function(){
+//                            $.get("matches.php", {"tourney": $(this).text()});
+//                            <?php $_GET['tourney'] = "CCMO";?>
+//                            window.location.href = "matches.php";
+//                        });
                         $("#test ul").append(li);
                     }
                     
