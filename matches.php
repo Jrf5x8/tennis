@@ -26,7 +26,7 @@
                     active: false,
                     autoActivate: true,
                     activate: function(){
-                        $("#opponent").attr("value", $('.ui-accordion-header-active h3').text()));
+                        $("#opponent").attr("value", $('.ui-accordion-header-active h3').text());
                     }
                 });
             });
