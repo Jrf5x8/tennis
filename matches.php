@@ -37,7 +37,7 @@
 //                            
 //                            
 //                        });
-                        div.html($("#form").html());
+                        div.html("<p>" + $("#form").html() + "</p>");
 
 
                         $("#accordion").append(h3, div);
