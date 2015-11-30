@@ -17,9 +17,12 @@
         
         <title>Home Page</title>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.min.css">
         <script>
            $(function(){
                 $("#form").hide();
+                $("#accordion").accordion();
 
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){

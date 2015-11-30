@@ -15,6 +15,8 @@
         
         <title>Home Page</title>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.min.css">
         <script>
             $(function(){
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
