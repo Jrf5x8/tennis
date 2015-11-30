@@ -52,7 +52,7 @@
                 });
                
                $("#accordion").click(function(){
-                    $("#opponent").attr("value", $(".ui-accordion-header-active").text());
+                    $("#opponent").attr("value", $(".ui-accordion-header-active.ui-state-active").text());
                });
 
            });
