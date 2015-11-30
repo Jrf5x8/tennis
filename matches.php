@@ -1,22 +1,4 @@
 
-<!doctype html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css.css">
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css">
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-
-          
-        <?php
-            session_start();
-            if(!$_SESSION['loggedin']){
-                header("Location: login.php");
-                exit;
-            }
-        ?>    
-        
-
         <script>
            $(function(){
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
