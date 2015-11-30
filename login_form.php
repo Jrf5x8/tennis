@@ -9,7 +9,7 @@
     </head>
     <body>
       <div id="loginWidget" class="ui-widget">
-        <h1 class="ui-widget-header">Login</h1>
+        <h1>Login</h1>
         
         <?php
             if ($error) {
@@ -24,6 +24,7 @@
                 <input name="username" type="text" autofocus value="<?php print $username ?>">
                 <p>Password:</p>
                 <input name="password" type="password">
+                <br>
                 <input type="submit" value="Submit">
             </form> 
         </div>
