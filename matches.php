@@ -1,12 +1,13 @@
+            "this is seriously retartded if this gets printed"
+
 <!--
 <!doctype html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css.css">
 
+          
         
-
-            "this is seriously retartded if this gets printed"
 //            session_start();
 //            if(!$_SESSION['loggedin']){
 //                header("Location: login.php");
