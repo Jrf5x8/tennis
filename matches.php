@@ -27,6 +27,7 @@
                         var li = $("<li>");
                         var h3 = $("<h3>");
                         var div = $("<div>");
+                        var p = $("<p>");
 
                         h3.html(data[d]["fname"]);
 //                        .click(function(){
@@ -37,10 +38,9 @@
 //                            
 //                            
 //                        });
-                        div.html("<p>" + $("#form").html() + "</p>");
+                        p.html($("#form").html());
 
-
-                        $("#accordion").append(h3, div);
+                        $("#accordion").append(h3, div, p);
                     }
                 });
 
