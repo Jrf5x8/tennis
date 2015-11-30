@@ -52,6 +52,7 @@
                 });
                
                $("#accordion h3").click(function(){
+                    console.log($(".ui-accordion-content-active p form span").text());
                     $("#opponent").attr("value", $(".ui-accordion-content-active p form span").text());
                });
 
