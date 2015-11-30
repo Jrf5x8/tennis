@@ -52,7 +52,7 @@
                 });
                
                $("#accordion").click(function(){
-                    $("#opponent").attr("value", $(".ui-accordion-header-active.ui-state-active").text());
+                    $("#opponent").attr("value", $(".ui-accordion-header-active").text());
                });
 
            });
@@ -66,7 +66,7 @@
             </div>
             <div id="form">
                         <form method="post" action="reportScores.php">
-                        <input type="hidden" value="" id="opponent" name="opponent">
+                        <input type="hidden" id="opponent" name="opponent">
                         <p>Score vs <span></span>:</p>
                             <table>
                             <tr>
