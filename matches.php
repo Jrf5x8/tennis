@@ -1,17 +1,21 @@
+<!--
 <!doctype html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css.css">
 
        <?php 
-            session_start();
-            if(!$_SESSION['loggedin']){
-                header("Location: login.php");
-                exit;
-            }
-            print '<a href="logout.php">Logout</a>';
+
+            this is seriously retartded if this gets printed
+//            session_start();
+//            if(!$_SESSION['loggedin']){
+//                header("Location: login.php");
+//                exit;
+//            }
+//            print '<a href="logout.php">Logout</a>';
                
         ?>
+        
         
         <title>Home Page</title>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -47,4 +51,4 @@
         </div>
     </body>
     
-</html>
+</html>-->
