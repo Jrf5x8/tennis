@@ -25,15 +25,15 @@
                         .click(function(){
                             $.get("scores.php", {"opponent":$(this).text()}, function(data){
                                 $("#test").html(data);
-                                $("#scores").submit(function(){
-                                    $.post("reportScores.php", {"opponent":$(this).text()}, function(data){
-                                        $("#test").append("<p>" + data + "</p>"); 
-                                    });
-                                });
                             });
                             
                         });
                         $("#test ul").append(li);
+                        $("#scores").submit(function(){
+                            $.post("reportScores.php", {"opponent":$(this).text()}, function(data){
+                                $("#test").append("<p>" + data + "</p>"); 
+                            });
+                        });
                     }
                 });
                
