@@ -67,7 +67,7 @@
             </div>
             <div id="form">
                         <form method="post" action="reportScores.php">
-                        <input type="hidden" id="opponent" name="opponent">
+                        <input type="hidden" id="opponent" name="opponent" value>
                         <p>Score vs <span></span>:</p>
                             <table>
                             <tr>
