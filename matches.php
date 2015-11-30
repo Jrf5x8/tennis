@@ -42,10 +42,10 @@
         <div id="wrapper">
             <div id="header"></div>
             <div id="test">
-                <ul id="tournamentList">
-                    
+                <ul>   
                 </ul>
-                    <div id="form" visibility="hidden">
+            </div>
+            <div id="form" visibility="hidden">
                         <form id="scores" method="post" action="reportScores.php">
                         <p>Score vs <span id="opponent"></span>:</p>
                             <table>
@@ -64,7 +64,6 @@
                             </tr>
                     </form>
                 </div>
-            </div>
         </div>
     </body>
     
