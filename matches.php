@@ -29,7 +29,7 @@
                         li.html(data[d]["fname"])
                         .click(function(){
                             $.get("scores.php", {"opponent":$(this).text()});
-                            $("#form").show(100);
+                            $("#form").show(500);
                             $("#form span").html($(this).text());
                             
                             
