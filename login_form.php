@@ -18,13 +18,19 @@
         ?>
         
         <form action="login.php" method="POST">
+            <div class="stack">
+                <label for="username">User name:</label>
+                <input type="text" id="username" name="username" class="ui-widget-content ui-corner-all" autofocus value="<?php print $username; ?>">
+            </div>
             
-            <input type="hidden" name="action" value="do_login">
-            <p>Username: </p>
-            <input type="text" name="username">
-            <p>Password: </p>
-            <input type="password" name="password">
-            <input type="submit" value="Submit">
+            <div class="stack">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="ui-widget-content ui-corner-all">
+            </div>
+            
+            <div class="stack">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
     </body>
