@@ -17,8 +17,8 @@
         
         <title>Home Page</title>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script>
            $(function(){
                 $("#form").hide();
@@ -70,7 +70,7 @@
                 <ul>   
                 </ul>
             </div>
-            <div id="form" visibility="hidden">
+            <div id="form">
                         <form id="scores" method="post" action="reportScores.php">
                         <p>Score vs <span id="opponent"></span>:</p>
                             <table>
