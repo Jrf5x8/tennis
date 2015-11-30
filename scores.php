@@ -3,7 +3,7 @@
     $opponent = $_GET['opponent']
 
     print '<form id="scores" method="post" action="reportScores.php">
-                <p>Score vs <span id="opponent">' . $opponent . '</span>:</p>
+                <p>Score vs <span id="opponent">Dan</span>:</p>
                     <table>
                     <tr>
                         <td><label for="set1games">1st Set: </label></td>
