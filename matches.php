@@ -33,7 +33,7 @@
 //                            
 //                            
 //                        });
-                        div.html($("form").html());
+                        div.html($("#form").html());
 
 
                         $("#accordion").append(h3, div);
