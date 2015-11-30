@@ -8,25 +8,33 @@
         <title>Login</title>
     </head>
     <body>
-      <div id="loginWidget" class="ui-widget">
-        <h1>Login</h1>
+    <div id="loginWidget" class="ui-widget">
+        <h1 class="ui-widget-header">Login</h1>
         
         <?php
             if ($error) {
                 print "<div class=\"ui-state-error\">$error</div>\n";
             }
         ?>
-            <form action="login.php" method="POST">
-                <input type="hidden" name="action" value="do_login">
-
-                <input type="hidden" name="action" value="do_login">
-                <p>Username:</p>
-                <input name="username" type="text" autofocus value="<?php print $username ?>">
-                <p>Password:</p>
-                <input name="password" type="password">
-                <br>
+        
+        <form action="login.php" method="POST">
+            
+            <input type="hidden" name="action" value="do_login">
+            
+            <div class="stack">
+                <label for="username">User name:</label>
+                <input type="text" id="username" name="username" class="ui-widget-content ui-corner-all" autofocus value="<?php print $username; ?>">
+            </div>
+            
+            <div class="stack">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="ui-widget-content ui-corner-all">
+            </div>
+            
+            <div class="stack">
                 <input type="submit" value="Submit">
-            </form> 
-        </div>
+            </div>
+        </form>
+    </div>
     </body>
 </html>
