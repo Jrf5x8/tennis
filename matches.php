@@ -27,7 +27,7 @@
                                 $("#test").html(data);
                                 $("#scores").submit(function(){
                                     $.post("reportScores.php", {"opponent":$(this).text()}, function(data){
-                                        $("#test").append(data); 
+                                        $("#test").append("<p>" + data + "</p>"); 
                                     });
                                 });
                             });
