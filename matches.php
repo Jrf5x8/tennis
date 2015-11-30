@@ -13,6 +13,7 @@
 <!doctype html>
 <html>
        <head>
+       <title>Matches</title>
         <link rel="stylesheet" type="text/css" href="css.css">
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script>
