@@ -82,6 +82,10 @@
                                 <td><input type="number" name="set2games2" min="0" max="7" maxlength="1" size="3"></td>
                             </tr>
                             <tr>
+                                <td><label for="winner">I won:</label></td>
+                                <td><input type="radio" name="winner"></td>
+                            </tr>
+                            <tr>
                                 <td><input type="submit" value="submit"></td>
                             </tr>
                     </form>
