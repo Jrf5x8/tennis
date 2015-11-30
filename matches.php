@@ -23,7 +23,7 @@
                         var li = $("<li>");
                         li.html(data[d]["fname"])
                         .click(function(){
-                            $.get("scores.php", function(data){
+                            $.get("scores.php", {"opponent":$(this).text()}, function(data){
                                 $("#test").html(data);
                                 $("#scores").submit(function(){
                                     $.post("reportScores.php", {"opponent":$(this).text()}, function(data){
