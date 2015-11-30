@@ -10,7 +10,7 @@
         ?>
 
 
-<!doctype html>
+<!--<!doctype html>
 <html>
        <head>
        <title>Matches</title>
@@ -20,7 +20,7 @@
            $(function(){
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
                 $("#accordion").accordion();
-                $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
+                $.get("matchData.php", {"tourney": "<?php //print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
@@ -75,5 +75,5 @@
                 </div>
         </div>
     </body>
-</html>
+</html>-->
 
