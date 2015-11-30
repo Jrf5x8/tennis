@@ -51,6 +51,7 @@
                         $("#accordion").accordion("refresh");
                     }
                 });
+               
                $("#accordion").click(function(){
                     $("#opponent").attr("value", $(this 'h3').text());
                });
