@@ -53,8 +53,8 @@
                
                $("#accordion").click(function(){
                     console.log($(".ui-accordion-header-active").text());
-                    $("#opponent").removeAttr("value");
-                    $("#opponent").attr("value", $(".ui-accordion-header-active").text());
+                    $("#opponent", this).removeAttr("value");
+                    $("#opponent", this).attr("value", $(".ui-accordion-header-active").text());
                 });
            });
                
