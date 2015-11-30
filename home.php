@@ -33,7 +33,7 @@
                         li.html(data[d]["name"])
                         .click(function(){
                             $.get("matches.php", {"tourney": $(this).text()}, function(data){
-                                $("#wrapper").html(data);
+                                $(HTMLHeadElement).append(data);
                             });
                         });
                         $("#test ul").append(li);
