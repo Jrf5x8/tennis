@@ -9,14 +9,13 @@
     </head>
     <body>
       <div id="loginWidget" class="ui-widget">
-           <?php
-                //session_start();
-                //require "do_login.php";
-                if($error){
-                    print $error;
-                }
-
-            ?>
+        <h1 class="ui-widget-header">Login</h1>
+        
+        <?php
+            if ($error) {
+                print "<div class=\"ui-state-error\">$error</div>\n";
+            }
+        ?>
             <form action="login.php" method="POST">
                 <input type="hidden" name="action" value="do_login">
 
