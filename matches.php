@@ -54,6 +54,7 @@
                         div.html(p);
 
                         $("#accordion").append(h3, div);
+                        $("#accordion").accordion("refresh");
                     }
                 });
 
