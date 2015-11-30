@@ -49,13 +49,8 @@
             <div id="accordion">
                 
             </div>
-            <div id="test">
-                <ul id="tournamentList">
-                    
-                </ul>
-            </div>
             <div id="form">
-                        <form id="scores" method="post" action="reportScores.php">
+                        <form method="post" action="reportScores.php">
                         <p>Score vs <span id="opponent"></span>:</p>
                             <table>
                             <tr>
@@ -73,7 +68,6 @@
                             </tr>
                     </form>
                 </div>
-        </div>
         </div>
     </body>
     
