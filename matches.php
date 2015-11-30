@@ -26,16 +26,19 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
-                        li.html(data[d]["fname"])
+                        var h3 = $("<h3>");
+                        var div = $("<div>");
+                        h3.html(data[d]["fname"])
                         .click(function(){
                             $.get("scores.php", {"opponent":$(this).text()});
-                            $("#form").show(500);
+                            //$("#form").show(500);
                             $("#form span").html($(this).text());
+                            div.html($("form span").html();
                             
                             
                             
                         });
-                        $("#test ul").append(li);
+                        $("#accordion").append(h3, div);
                     }
                 });
 
@@ -46,6 +49,17 @@
     <body>
         <div id="wrapper">
             <div id="header"></div>
+            
+            
+            <div id="accordion">
+                
+            </div>
+            
+            
+            
+            
+            
+            
             <div id="test">
                 <ul>   
                 </ul>
