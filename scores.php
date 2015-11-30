@@ -24,7 +24,7 @@
                         <td><input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"></td>
                     </tr>
                     <tr>
-                        <input type="submit" value="submit">
+                        <td><input type="submit" value="submit"></td>
                     </tr>
             </form>'
 
