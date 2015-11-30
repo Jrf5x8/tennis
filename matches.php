@@ -33,7 +33,7 @@
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
                 $("#form").hide();
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
-                    $("#form span").html(data[d].["fname"]);
+                    $("#form span").html(data[d]["fname"]);
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
