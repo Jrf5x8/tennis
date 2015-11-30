@@ -10,7 +10,7 @@
         exit;
     }
 
-    print '<form id="scores">
+    print '<form id="scores" method="post">
                 <p>Score:</p>
                     <table>
                     <tr>
