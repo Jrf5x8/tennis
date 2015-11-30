@@ -21,9 +21,13 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script>
+            $(function() {
+                $( "#accordion" ).accordion();
+            });
+  </script>
+        <script>
            $(function(){
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
-                $("#accordion").accordion();
                 $("#form").hide();
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
@@ -42,8 +46,7 @@
 //                            
 //                            
 //                        });
-//                        p.html($("#form").html());
-                        p.html("Hello World");
+                        p.html($("#form").html());
 
                         div.html(p);
 
