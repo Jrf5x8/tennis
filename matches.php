@@ -55,7 +55,7 @@
                     console.log($(".ui-accordion-header-active").text());
                     $("#opponent").attr("value", $(".ui-accordion-header-active").text());
 
-           });
+                });
                     
         </script>
     </head>    
