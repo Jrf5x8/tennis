@@ -13,12 +13,6 @@
             }
         ?>    
         
-        
-        
-        <title>Home Page</title>
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
         <script>
            $(function(){
@@ -52,45 +46,4 @@
            });
                     
         </script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <div id="header"></div>
-            
-            
-            <div id="accordion">
-                
-            </div>
-            
-            
-            
-            
-            
-            
-            <div id="test">
-                <ul>   
-                </ul>
-            </div>
-            <div id="form">
-                        <form id="scores" method="post" action="reportScores.php">
-                        <p>Score vs <span id="opponent"></span>:</p>
-                            <table>
-                            <tr>
-                                <td><label for="set1games">1st Set: </label></td>
-                                <td><input type="number" name="set1games" min="0" max="7" maxlength="1" size="3"> - </td>
-                                <td><input type="number" name="set1games2" min="0" max="7" maxlength="1" size="3"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="set2games">2nd Set: </label></td>
-                                <td><input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"> - </td>
-                                <td><input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="submit" value="submit"></td>
-                            </tr>
-                    </form>
-                </div>
-        </div>
-    </body>
-    
-</html>
+
