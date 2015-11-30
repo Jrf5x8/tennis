@@ -42,6 +42,7 @@
 
                         h3.html(data[d]["fname"]);
                         $("#form span").html(data[d]["fname"]);
+                        $("#opponent").attr("value", data[d]["fname"]);
 
                         
                         p.html($("#form").html());
@@ -64,8 +65,8 @@
             </div>
             <div id="form">
                         <form method="post" action="reportScores.php">
-                        <input type="hidden" value="">
-                        <p>Score vs <span id="opponent"></span>:</p>
+                        <input type="hidden" value="" id="opponent">
+                        <p>Score vs <span></span>:</p>
                             <table>
                             <tr>
                                 <td><label for="set1games">1st Set: </label></td>
