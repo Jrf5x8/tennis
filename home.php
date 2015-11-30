@@ -1,9 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css.css">
-
-       <?php 
+        <?php 
             session_start();
             if(!$_SESSION['loggedin']){
                 header("Location: login.php");
@@ -12,6 +10,9 @@
             print '<a href="logout.php">Logout</a>';
                
         ?>
+        <link rel="stylesheet" type="text/css" href="css.css">
+
+
         
         <title>Home Page</title>
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
