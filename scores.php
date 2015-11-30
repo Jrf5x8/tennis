@@ -10,7 +10,7 @@
         exit;
     }
 
-    print '<form action="reportScore.php" method="POST">
+    print '<form id="scores">
                 <p>Score:</p>
                     <table>
                     <tr>
