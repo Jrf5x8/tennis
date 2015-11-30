@@ -1,6 +1,4 @@
 <?php
-
-    $match = $_GET['opponent'];
     require_once 'db.conf';
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 

@@ -30,7 +30,7 @@
                         });
                         $("#test ul").append(li);
                         $("#scores").submit(function(){
-                            $.post("reportScores.php", {"opponent":$(this).text()}, function(data){
+                            $.post("reportScores.php", $(this).serialize(), function(data){
                                 $("#test").append("<p>" + data + "</p>"); 
                             });
                         });
