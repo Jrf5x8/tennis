@@ -39,8 +39,9 @@
 //                            
 //                        });
                         p.html($("#form").html());
+                        div.html(p);
 
-                        $("#accordion").append(h3, div, p);
+                        $("#accordion").append(h3, div);
                     }
                 });
 
