@@ -11,7 +11,6 @@
                 header("Location: login.php");
                 exit;
             }
-            print '<a href="logout.php">Logout</a>';
         ?>    
         
         
@@ -20,6 +19,7 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
            $(function(){
+                $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
                     for(var d in data){
