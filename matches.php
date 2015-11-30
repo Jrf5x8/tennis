@@ -28,16 +28,18 @@
                         var li = $("<li>");
                         var h3 = $("<h3>");
                         var div = $("<div>");
-                        h3.html(data[d]["fname"]);
-//                        .click(function(){
-//                            $.get("scores.php", {"opponent":$(this).text()});
-//                            //$("#form").show(500);
-//                            $("#form span").html($(this).text());
-//                            div.html($("form span").html();
-//                            
-//                            
-//                            
-//                        });
+                        div.html($("form span").html();
+
+                        h3.html(data[d]["fname"])
+                        .click(function(){
+                            $.get("scores.php", {"opponent":$(this).text()});
+                            //$("#form").show(500);
+                            $("#form span").html($(this).text());
+                            
+                            
+                            
+                        });
+
                         $("#accordion").append(h3, div);
                     }
                 });
