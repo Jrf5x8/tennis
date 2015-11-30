@@ -5,7 +5,7 @@
                 exit;
             }
             print '<a href="logout.php">Logout</a>';
-            print_r($_GET);
+            print $_GET['tourney'];
                
         ?>
 
