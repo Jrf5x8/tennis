@@ -10,6 +10,10 @@
         exit;
     }
 
-    print '<form action="reportScore.php" method="POST"><p>Score:</p><input type="text" name="score"><input type="submit" value="submit"></form>'
+    print '<form action="reportScore.php" method="POST">
+                <p>Score:</p>
+                <input type="number" name="set1" min="0" max="7">
+                <input type="submit" value="submit">
+            </form>'
 
 ?>
