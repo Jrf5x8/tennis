@@ -65,7 +65,7 @@
             </div>
             <div id="form">
                         <form method="post" action="reportScores.php">
-                        <input type="hidden" value="" id="opponent">
+                        <input type="hidden" value="" id="opponent" name="opponent">
                         <p>Score vs <span></span>:</p>
                             <table>
                             <tr>
@@ -76,7 +76,7 @@
                             <tr>
                                 <td><label for="set2games">2nd Set: </label></td>
                                 <td><input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"> - </td>
-                                <td><input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"></td>
+                                <td><input type="number" name="set2games2" min="0" max="7" maxlength="1" size="3"></td>
                             </tr>
                             <tr>
                                 <td><input type="submit" value="submit"></td>
