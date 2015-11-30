@@ -23,8 +23,7 @@
             $(function() {
                 $( "#accordion" ).accordion({
                     collapsible: true,
-                    active: false,
-                    autoActivate: true
+                    active: false
                 });
             });
   </script>
