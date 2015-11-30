@@ -29,17 +29,15 @@
                             
                         });
                         $("#test ul").append(li);
-                        $("#scores").submit(function(){
-                            $.post("reportScores.php", $(this).serialize(), function(data){
-                                $("#test").append("<p>" + data + "</p>"); 
-                            });
-                        });
                     }
                 });
-               
-               
-               
-            });
+
+                $("#scores").submit(function(){
+                    $.post("reportScores.php", $(this).serialize(), function(data){
+                        $("#test").append("<p>" + data + "</p>"); 
+                    });               
+                });
+           });
                     
         </script>
     </head>
