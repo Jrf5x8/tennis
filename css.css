@@ -47,3 +47,13 @@ div.pageWidget {
     margin: 50px auto;
     text-align: center;
 }
+
+ul{
+    color: blue;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+ul:hover{
+    cursor: pointer;
+}
