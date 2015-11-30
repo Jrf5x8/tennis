@@ -6,7 +6,7 @@
 
        <?php 
 
-            this is seriously retartded if this gets printed
+            "this is seriously retartded if this gets printed"
 //            session_start();
 //            if(!$_SESSION['loggedin']){
 //                header("Location: login.php");
