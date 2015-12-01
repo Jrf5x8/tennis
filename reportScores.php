@@ -39,8 +39,13 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     </head>
     <body>
+       <div id="wrapper">
         <div id="header">
             <h1>Congrats, your results have been submitted successfully.</h1>
+        </div>
+        <div>
+            <a href="home.php">Return Home</a>
+        </div>
         </div>
     </body>
 </html>
