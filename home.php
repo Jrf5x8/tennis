@@ -24,11 +24,11 @@
             $(function(){
                 $(document)
                     .ajaxStart(function(){
-                        $("#test").html("<h1>Loading...</h1>");
+                        $("#loading").html("<h1>Loading...</h1>");
                     })
                 
                     .ajaxStop(function(){
-                        $("#test").html("");
+                        $("#loading").html("");
                     });
                 
                    
@@ -58,6 +58,7 @@
     <body>
         <div id="wrapper">
             <div><?php print '<a href="logout.php">Logout</a>'; ?></div>
+            <div id="loading"></div>
             <div id="header"></div>  
             <div id="test"><ul></ul></div>        
         </div>
