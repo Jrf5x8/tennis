@@ -4,7 +4,7 @@
                 header("Location: login.php");
                 exit;
             }
-            print '<a href="logout.php">Logout</a>';
+            
                
         ?>
 
@@ -21,7 +21,7 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script>
             $(function(){
-                $('li a').button();
+                $('a').button();
                 $("#accordion").accordion();
                 $("#form").hide();
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
@@ -42,6 +42,7 @@
     </head>
     <body>
         <div id="wrapper">
+            <div><?php print '<a href="logout.php">Logout</a>'; ?></div>
             <div id="header"></div>  
             <div id="test"><ul></ul></div>        
         </div>
