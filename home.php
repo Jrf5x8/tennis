@@ -21,7 +21,7 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script>
             $(function(){
-                $('a').button();
+                $('li a').button();
                 $("#accordion").accordion();
                 $("#form").hide();
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
