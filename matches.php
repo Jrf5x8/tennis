@@ -38,7 +38,7 @@
                         var h3 = $("<h3>");
                         var div = $("<div>");
                         var p = $("<p>");
-                        var input = $("<input type=\"hidden\" name=\"matchID\" value=\"" . data[d]["id"] . "\">");
+                        var input = $("<input type=\"hidden\" name=\"matchID\" value=\"" + data[d]["id"] + "\">");
                         $("form #addID").append(input);
                         h3.html(data[d]["fname"]);
                         $("#form span").html(data[d]["fname"]);
