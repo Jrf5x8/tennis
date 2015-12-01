@@ -31,9 +31,6 @@
                         $("#loading").html("");
                     });
                 
-                   
-            };
-                });
                 $("#accordion").accordion();
                 $("#form").hide();
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
