@@ -44,7 +44,7 @@
                         h3.html(data[d]["fname"]);
                         $("#form span").html(data[d]["fname"]);
                         
-                        p.html($("#form").html() + data[d]["id"]);
+                        p.html($("#form").html() + "<span class=\"hide\">" + data[d]["id"] + "</span>");
                         div.html(p);
 
                         $("#accordion").append(h3, div);
