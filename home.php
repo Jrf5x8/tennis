@@ -29,7 +29,7 @@
                 $.get("homeData.php", function(data){
                     console.log(data);
                     for(var d in data){
-                        var li = $("<li>");
+                        var li = $("<li id=\"homeLI\">");
                         li.button();
                         li.html("<a href=\"matches.php?tourney=" + data[d]["name"] + "\">" + data[d]["name"] + "</a>");
                         $("#test ul").append(li);
