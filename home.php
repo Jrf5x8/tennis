@@ -14,9 +14,6 @@
     <head>
 
         <title>Home Page</title>
-        <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
-        <script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 
 
         <link rel="stylesheet" type="text/css" href="css.css">
@@ -64,15 +61,6 @@
     <body>
         <div id="wrapper">
             <div><?php print '<a href="logout.php">Logout</a>'; ?></div>
-            <div id="slider" class="nivoSlider">
-                <img src="nivo-slider/demo/images/toystory.jpg" alt="" />
-                <a href="http://dev7studios.com"><img src="nivo-slider/demo/images/nemo.jpg" alt="" title="#htmlcaption" /></a>
-                <img src="nivo-slider/demo/images/up.jpg" alt="" title="This is an example of a caption" />
-                <img src="nivo-slider/demo/images/walle.jpg" alt="" />
-            </div>
-<div id="htmlcaption" class="nivo-html-caption">
-    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-</div>
             <div id="loading"></div>
             <div id="header"></div>  
             <div id="test"><ul></ul></div>        
