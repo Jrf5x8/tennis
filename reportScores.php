@@ -39,6 +39,14 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script>
             $(function(){
+                $(document)
+                    .ajaxStart(function(){
+                        $("#loading").html("<h1>Loading...</h1>");
+                    })
+                
+                    .ajaxStop(function(){
+                        $("#loading").html("");
+                    });
                 $('a').button();
             });
         </script>
