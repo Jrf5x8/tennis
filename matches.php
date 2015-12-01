@@ -54,8 +54,9 @@
                
                $("#accordion").click(function(){
                     console.log($(".ui-accordion-header-active").text());
-                    $("#opponent", this).removeAttr("value");
                     $(".ui-accordion-content-active p form #opponent", this).attr("value", $(".ui-accordion-header-active").text());
+                    $(".ui-accordion-content-active p form #matchID", this).attr("value", $(".ui-accordion-content-active .hide").text());
+
                    $(this).accordion("refresh");
                 });
            });
@@ -70,6 +71,7 @@
             <div id="form">
                         <form method="post" action="reportScores.php">
                         <input type="hidden" id="opponent" name="opponent" value>
+                        <input type="hidden" id="matchID" name="matchID" value>
                         <p>Score vs <span></span>:</p>
                             <table>
                             <tr>
@@ -86,7 +88,6 @@
                                 <td><label for="winner">I won:</label></td>
                                 <td><input type="checkbox" name="winner"></td>
                             </tr>
-
                             <tr>
                                 <td><input type="submit" value="submit"></td>
                             </tr>

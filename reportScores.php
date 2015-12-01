@@ -13,6 +13,7 @@
     $player1 = $_SESSION['loggedin'];
     $player2 = $_POST['opponent'];
     $winner = empty($_POST['winner']) ? $player2 : $player1;
+    $matchID = $_POST['matchID'];
 
     $score = $_POST['set1games'] . '-' . $_POST['set1games2'] . ' ' . $_POST['set2games'] . '-' . $_POST['set2games2'];
 
@@ -20,6 +21,8 @@
     INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2014-08-13', 1, 2, 3, 2, '6-4 6-1');
 
 
-    $query = "INSERT INTO matches(player1, player2, winner, score) VALUES('$player1', '$player2', '$winnner', '$score') WHERE id = ";
+    $query = "INSERT INTO matches(player1, player2, winner, score) VALUES('$player1', '$player2', '$winnner', '$score') WHERE id = $matchID";
+
+    $mysqli->query($query);
 
 ?>
