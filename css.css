@@ -11,9 +11,18 @@ body{
     background-color: #e9e9e9;
     width: 900px;
     text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: cornflowerblue;
+    font-weight: 900;
+
     
+}
+
+#test{
+    text-align: center;
 }
 
 #loginWidget {
@@ -52,6 +61,8 @@ ul{
     color: blue;
     list-style-type: none;
     text-decoration: underline;
+    float: left:
+    width: 400px;    
 }
 
 ul:hover{
@@ -62,6 +73,8 @@ ul:hover{
     display: none;
 }
 
-ul li a{
+li{
     text-align: center;
+    padding:10px;
+     
 }
