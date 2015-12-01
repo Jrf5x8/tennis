@@ -29,6 +29,16 @@
   </script>
         <script>
            $(function(){
+                $(document)
+                    .ajaxStart(function(){
+                        $("#loading").html("<h1>Loading...</h1>");
+                    })
+                
+                    .ajaxStop(function(){
+                        $("#loading").html("");
+                    });               
+               
+               
                 $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
                 $("#form").hide();
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
@@ -65,9 +75,11 @@
     </head>    
     <body>
         <div id="wrapper">
-            <div id="header"></div>  
+            <div id="header"></div>
+            <div id="loading"></div>  
             <div id="accordion">
             </div>
+            
             <div id="form">
                         <form method="post" action="reportScores.php">
                         <input type="hidden" id="opponent" name="opponent" value>
