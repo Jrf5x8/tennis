@@ -118,6 +118,10 @@ INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('201
 INSERT INTO matches(date, tournID, player1, player2, winner, score) VALUES ('2015-08-13', 2, 2, 6, 2, '6-4 6-1');
 
 
+#tournament director insertion statements for new matches
+INSERT INTO matches(date, tournID, player1, player2) VALUES('2015-11-30', 1, 2, 7); 
+
+
 #just selects the opponent
 SELECT fname FROM person JOIN matches on person.id = matches.player2 WHERE matches.player1 = 2;
 
@@ -135,5 +139,11 @@ SELECT matches.id, p1.fname as 'you', p2.fname
 FROM MATCHES
 JOIN person p1 ON p1.id = matches.player1
 JOIN person p2 ON p2.id = matches.player2;
+
+
+UPDATE matches SET winner = 2, score = '6-0 6-0' WHERE id = 51;
+
+
+
 
   
