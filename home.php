@@ -16,6 +16,7 @@
         <title>Home Page</title>
         <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
         <script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 
 
         <link rel="stylesheet" type="text/css" href="css.css">
