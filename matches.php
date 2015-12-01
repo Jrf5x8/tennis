@@ -38,7 +38,8 @@
                         var h3 = $("<h3>");
                         var div = $("<div>");
                         var p = $("<p>");
-
+                        var input = $('<input type="hidden" name="matchID" value="' . data[d]["id"] . '">"');
+                        $("form #addID").append(input);
                         h3.html(data[d]["fname"]);
                         $("#form span").html(data[d]["fname"]);
                         
@@ -81,7 +82,7 @@
                                 <td><input type="number" name="set2games" min="0" max="7" maxlength="1" size="3"> - </td>
                                 <td><input type="number" name="set2games2" min="0" max="7" maxlength="1" size="3"></td>
                             </tr>
-                            <tr>
+                            <tr id="addID">
                                 <td><label for="winner">I won:</label></td>
                                 <td><input type="checkbox" name="winner"></td>
                             </tr>
