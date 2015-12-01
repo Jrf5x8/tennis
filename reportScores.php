@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once 'db.conf';
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
