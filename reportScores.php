@@ -25,3 +25,22 @@
     $mysqli->query($query);
 
 ?>
+
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <title>Success!</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css">
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Congrats, your results have been submitted successfully.</h1>
+        </div>
+    </body>
+</html>
