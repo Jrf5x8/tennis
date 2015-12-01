@@ -91,3 +91,8 @@ li{
     list-style-type: none;
     
 }
+
+#slider{
+    width: 900px;
+    float: left;
+}

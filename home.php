@@ -15,7 +15,7 @@
 
         <title>Home Page</title>
         <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
-<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+        <script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 
 
         <link rel="stylesheet" type="text/css" href="css.css">
@@ -55,20 +55,20 @@
                     
         </script>
         <script type="text/javascript">
-$(window).load(function() {
-    $('#slider').nivoSlider();
-});
-</script>
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>
     </head>
     <body>
         <div id="wrapper">
             <div><?php print '<a href="logout.php">Logout</a>'; ?></div>
             <div id="slider" class="nivoSlider">
-    <img src="images/slide1.jpg" alt="" />
-    <a href="http://dev7studios.com"><img src="images/slide2.jpg" alt="" title="#htmlcaption" /></a>
-    <img src="images/slide3.jpg" alt="" title="This is an example of a caption" />
-    <img src="images/slide4.jpg" alt="" />
-</div>
+                <img src="images/slide1.jpg" alt="" />
+                <a href="http://dev7studios.com"><img src="images/slide2.jpg" alt="" title="#htmlcaption" /></a>
+                <img src="images/slide3.jpg" alt="" title="This is an example of a caption" />
+                <img src="images/slide4.jpg" alt="" />
+            </div>
 <div id="htmlcaption" class="nivo-html-caption">
     <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
 </div>
