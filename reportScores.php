@@ -10,7 +10,7 @@
     }
 
 
-    print_r($_POST);
+    //print_r($_POST);
     $player1 = $_SESSION['loggedin'];
     $player2 = $_POST['opponent'];
     $winner = empty($_POST['winner']) ? $player2 : $player1;
