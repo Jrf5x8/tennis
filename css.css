@@ -57,3 +57,7 @@ ul{
 ul:hover{
     cursor: pointer;
 }
+
+.hide{
+    display: none;
+}
