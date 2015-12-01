@@ -44,10 +44,10 @@
                         h3.html(data[d]["fname"]);
                         $("#form span").html(data[d]["fname"]);
                         
-                        p.html($("#form").html());
+                        p.html($("#form").html() + span);
                         div.html(p);
 
-                        $("#accordion").append(h3, div, span);
+                        $("#accordion").append(h3, div);
                         $("#accordion").accordion("refresh");
                     }
                 });
