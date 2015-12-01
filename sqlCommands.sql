@@ -131,7 +131,7 @@ SELECT fname, tournaments.name FROM person JOIN tournaments JOIN tournamentplaye
 SELECT fname, player2 FROM person JOIN matches ON person.id = matches.player1;
 
 #Selects opponents for a given player
-SELECT p1.fname, p2.fname
+SELECT matches.id, p1.fname as 'you', p2.fname
 FROM MATCHES
 JOIN person p1 ON p1.id = matches.player1
 JOIN person p2 ON p2.id = matches.player2;
