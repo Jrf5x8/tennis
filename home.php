@@ -52,11 +52,6 @@
             });
                     
         </script>
-        <script type="text/javascript">
-            $(window).load(function() {
-                $('#slider').nivoSlider();
-            });
-        </script>
     </head>
     <body>
         <div id="wrapper">
