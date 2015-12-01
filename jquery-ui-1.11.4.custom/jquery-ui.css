@@ -206,7 +206,6 @@
 	cursor: default;
 }
 .ui-button {
-	display: inline-block;
 	position: relative;
 	padding: 0;
 	line-height: normal;
