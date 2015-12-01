@@ -40,6 +40,7 @@
         <script>
             $(function(){
                 $('a').button();
+            });
         </script>
     </head>
     <body>
