@@ -20,8 +20,20 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css">
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script>
+
             $(function(){
+                $(document)
+                    .ajaxStart(function(){
+                        $("#test").html("<h1>Loading...</h1>");
+                    })
                 
+                    .ajaxStop(function(){
+                        $("#test").html("<h1>Loading...</h1>");
+                    });
+                
+                   
+            };
+                });
                 $("#accordion").accordion();
                 $("#form").hide();
                 $("#header").html("<?php print "<h1> Welcome " . $_SESSION['loggedin'] . " </h1>"; ?>");
