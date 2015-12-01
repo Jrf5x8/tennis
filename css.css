@@ -62,6 +62,6 @@ ul:hover{
     display: none;
 }
 
-a{
+ul li a{
     text-align: center;
 }

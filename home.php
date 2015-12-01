@@ -30,13 +30,14 @@
                     console.log(data);
                     for(var d in data){
                         var li = $("<li>");
+                        li.button();
                         li.html("<a href=\"matches.php?tourney=" + data[d]["name"] + "\">" + data[d]["name"] + "</a>");
                         $("#test ul").append(li);
                     }
                     
                     });
                 
-                $('a, li').button();
+                $('a').button();
 
             });
                     
