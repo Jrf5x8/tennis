@@ -61,3 +61,7 @@ ul:hover{
 .hide{
     display: none;
 }
+
+a{
+    text-align: center;
+}
