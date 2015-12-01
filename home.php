@@ -28,7 +28,7 @@
                     })
                 
                     .ajaxStop(function(){
-                        $("#test").html("<h1>Loading...</h1>");
+                        $("#test").html("");
                     });
                 
                    
