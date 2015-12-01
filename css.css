@@ -60,9 +60,12 @@ div.pageWidget {
 ul{
     color: blue;
     list-style-type: none;
-    text-decoration: underline;
+    text-decoration: none;
+    text-align: center;
+    margin:  0 auto;
+    width:  450px;
     float: left:
-    width: 400px;    
+    width: 400px;
 }
 
 ul:hover{
@@ -82,4 +85,9 @@ li{
 #homeLI{
     margin: 20px;
     padding: 10px;
+    display: list-item;
+    width: 370px;
+    text-decoration: none;
+    list-style-type: none;
+    
 }
