@@ -19,7 +19,7 @@
     $score = $_POST['set1games'] . '-' . $_POST['set1games2'] . ' ' . $_POST['set2games'] . '-' . $_POST['set2games2'];
 
 
-    $query = "UPDATE matches SET winner = (SELECT id FROM person WHERE fname = '$winner'), score = '$score' WHERE id = $matchID;
+    $query = "UPDATE matches SET winner = (SELECT id FROM person WHERE fname = '$winner'), score = '$score' WHERE id = $matchID";
 ;
 
     $mysqli->query($query);
