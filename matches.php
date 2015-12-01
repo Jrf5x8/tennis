@@ -45,11 +45,9 @@
                         $("#form span").html(data[d]["fname"]);
                         
                         p.html($("#form").html());
-                        p.append(span);
-
                         div.html(p);
 
-                        $("#accordion").append(h3, div);
+                        $("#accordion").append(h3, div, span);
                         $("#accordion").accordion("refresh");
                     }
                 });
