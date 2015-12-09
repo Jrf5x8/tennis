@@ -56,11 +56,9 @@
     <body>
         <div id="wrapper">
             <div id="navbar">
-                <div id="navbarlinks">
                     <span id="logout"><a href="login.php">Logout</a></span>
                     <span class="homebutton"><a href="home.php">Home</a></span>
                     <a href="tournamentMedia.php">Media</a>
-                </div>
             </div>
             <div id="header"></div>
             <div id="loading"></div> 

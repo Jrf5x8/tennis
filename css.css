@@ -132,20 +132,21 @@ li{
 	/* font-size:44px; */
 	color: #2d4057;
 	/* padding-top: 20px; */
+	height: 50px
 }
 
 
 #navbarlinks
 {
-	width: 900px;
-	float: left;
+	/* width: 900px; */
+	/* float: left; */
 	/* text-align: right; */
 	/* padding-top: 40px; */
 	/* margin-bottom: 20px; */
 }
 
 
-#navbarlinks a
+#navbar a
 {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -158,7 +159,7 @@ li{
 	
 }
 
-#navbarlinks a:hover
+#navbar a:hover
 {
 	text-decoration: underline;
 	background-color: #2d4057;
