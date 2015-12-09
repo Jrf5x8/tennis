@@ -20,6 +20,8 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script>
             $(function() {
+                $('#nav a').button();
+                
                 $( "#accordion" ).accordion({
                     collapsible: true,
                     active: false
@@ -69,7 +71,7 @@
                    $(this).accordion("refresh");
                 });
                
-               $('#nav a').button();
+               
            });
                
         </script>
