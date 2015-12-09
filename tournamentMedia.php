@@ -26,8 +26,9 @@
     </head>
     <body>
         <div id="wrapper">
-            <div><?php print '<a href="logout.php">Logout</a>';
-                        print '<a href="home.php">Home</a>';?></div>
+            <div><?php print '<a href="logout.php" id="logout">Logout</a>';
+                        print '<a href="home.php">Home</a>';
+                        print '<span class="clicked"><a href="tournamentMedia.php">Media</a></span>'?></div>
             <div id="header"></div>  
             <div id="test"><ul></ul></div>        
         </div>

@@ -96,6 +96,13 @@ li{
 
 #logout{
     
+        text-align: right;
+        color: white;
+        float: right;
         
     
+}
+
+.clicked{
+    background-color: azure;
 }
