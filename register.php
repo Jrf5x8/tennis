@@ -22,18 +22,18 @@
             <div id="loading"></div> 
             <div id="test">
                 
-                   <form action="do_register.php" method="post">
-                      <div>
+                   <form action="do_register.php" method="post" id="registerform">
+                      <div class="stack">
                        <label for="username">User name:</label>
                        <input type="text" id="username" name="username" class="ui-widget-content ui-corner-all" autofocus>
                        </div>
                        <br>
-                       <div>
+                       <div class="stack">
                        <label for="password">Password:</label>
                        <input type="password" id="password" name="password" class="ui-widget-content ui-corner-all" >
                        </div>
                        <br>
-                       <div>
+                       <div class="stack">
                        <input type="submit" value="Submit">
                        </div>
                    </form>
