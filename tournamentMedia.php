@@ -69,7 +69,16 @@
                         </div>
                     </div>
                 </div>
-            </div>      
+            </div>
+            <div id="links">
+            <a href="http://localtenniscourtresurfacing.com/wp-content/uploads/2014/02/10-and-Under-Tennis-672x372.jpg" title="Banana" data-gallery>
+                <img src="images/thumbnails/10-and-Under-Tennis.gif" alt="Banana">
+            </a>
+            <a href="http://assets-ssl.usta.com/assets/1/1/LandingPageLeadImage/AA_and_P_courts.jpg" title="Apple" data-gallery>
+                <img src="images/thumbnails/AA_and_P_courts.gif" alt="Apple">
+            </a>
+            
+</div>      
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
