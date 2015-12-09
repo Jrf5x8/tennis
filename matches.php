@@ -38,7 +38,7 @@
                     });               
                
                
-                $("#header").html("Here is a list of your opponents. Please Select one to report a score!");
+                $("#header").html("<p>Here is a list of your opponents. Please Select one to report a score!</p>");
                 $("#form").hide();
                 $.get("matchData.php", {"tourney": "<?php print $_GET['tourney']; ?>"}, function(data){
                     console.log(data);
