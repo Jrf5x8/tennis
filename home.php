@@ -62,7 +62,7 @@
                     <a href="tournamentMedia.php">Media</a>
                 </div>
             </div>
-            
+            <div id="header"></div>
             <div id="loading"></div> 
             <div id="test"><ul></ul></div>        
         </div>
