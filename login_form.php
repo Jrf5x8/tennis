@@ -33,6 +33,7 @@
                 <input type="submit" value="Submit">
             </div>
         </form>
+        <a href="register.php">Click Here to Register!</a>
     </div>
     </body>
 </html>
