@@ -25,16 +25,16 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap-image-gallery.min.css">
         <script>
                             $(function(){
-                                $('a').button();
+                                $('.nava').button();
                             });
 
         </script>
     </head>
     <body>
         <div id="wrapper">
-            <div><?php print '<a href="logout.php" id="logout">Logout</a>';
-                        print '<a href="home.php">Home</a>';
-                        print '<span class="clicked"><a href="tournamentMedia.php">Media</a></span>'?></div>
+            <div><?php print '<a class="nava" href="logout.php" id="logout">Logout</a>';
+                        print '<a class="nava" href="home.php">Home</a>';
+                        print '<span class="clicked"><a class="nava" href="tournamentMedia.php">Media</a></span>'?></div>
             <div id="header"><p>Welcome to the tournament media page!</p></div>  
             <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
             <div id="blueimp-gallery" class="blueimp-gallery">
@@ -77,7 +77,7 @@
             <a href="http://assets-ssl.usta.com/assets/1/1/LandingPageLeadImage/AA_and_P_courts.jpg" title="Apple" data-gallery>
                 <img src="images/thumbnails/AA_and_P_courts.gif" alt="Apple">
             </a>
-            <video href="https://www.youtube.com/watch?v=YdlnEWC-7Wo">
+            <img href="https://www.youtube.com/watch?v=YdlnEWC-7Wo">
                 <video src="https://www.youtube.com/watch?v=YdlnEWC-7Wo"></video>
             </a>
             
