@@ -87,6 +87,7 @@
         </div>
         <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
         <script src="bootstrap/js/bootstrap-image-gallery.min.js"></script>
+        <div id="footer"><h1>Web App by: Jack Fay</h1></div>  
     </body>
     
 </html>

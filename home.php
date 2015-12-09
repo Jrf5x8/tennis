@@ -62,7 +62,8 @@
             </div>
             <div id="header"></div>
             <div id="loading"></div> 
-            <div id="test"><ul></ul></div>        
+            <div id="test"><ul></ul></div>     
+            <div id="footer"><h1>Web App by: Jack Fay</h1></div>   
         </div>
     </body>
     
