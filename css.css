@@ -106,7 +106,9 @@ li{
 
 .clicked{
     color: red;
-    
+}
 
-
+#loading{
+    text-align: center;
+    color: white;
 }
