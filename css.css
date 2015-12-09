@@ -9,6 +9,10 @@ body{
     padding-bottom: 30px;
 }
 
+#nav{
+    background-color: darkgray;
+}
+
 #header{
     background-color: #7A8288;
     width: 900px;
