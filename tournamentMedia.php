@@ -32,9 +32,11 @@
     </head>
     <body>
         <div id="wrapper">
-            <div><?php print '<a class="nava" href="logout.php" id="logout">Logout</a>';
-                        print '<a class="nava" href="home.php">Home</a>';
-                        print '<span class="clicked"><a class="nava" href="tournamentMedia.php">Media</a></span>'?></div>
+            <div id="navbar">
+                    <span id="logout"><a href="login.php">Logout</a></span>
+                    <a href="home.php">Home</a>
+                    <span class="homebutton"><a href="tournamentMedia.php">Media</a></span>
+            </div>
             <div id="header"><p>Welcome to the tournament media page!</p></div>  
             <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
             <div id="blueimp-gallery" class="blueimp-gallery">

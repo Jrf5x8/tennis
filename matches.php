@@ -78,9 +78,11 @@
     </head>    
     <body>
         <div id="wrapper">
-           <div id="nav"><?php print '<a id="logout" class="nava" href="logout.php">Logout</a>';
-                                print '<span class="clicked"><a href="home.php" class="nava">Home</a></span>';
-                                print '<a href="tournamentMedia.php" class="nava">Media</a>';?></div>
+           <div id="navbar">
+                    <span id="logout"><a href="login.php">Logout</a></span>
+                    <a href="home.php">Home</a>
+                    <a href="tournamentMedia.php">Media</a>
+            </div>
             <div id="header"></div>
             <div id="loading"></div>  
             <div id="accordion">
