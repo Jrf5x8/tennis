@@ -96,6 +96,10 @@ li{
 
 #logout{
     
-        
+        float: right;
     
+}
+
+.clicked{
+    background-color: white;
 }
