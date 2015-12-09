@@ -69,7 +69,7 @@
                    $(this).accordion("refresh");
                 });
                
-               $('a').button();
+               $('.nava').button();
            });
                
         </script>
