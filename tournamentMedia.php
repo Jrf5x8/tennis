@@ -85,7 +85,7 @@
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-        <script src="js/bootstrap-image-gallery.min.js"></script>
+        <script src="bootstrap/js/bootstrap-image-gallery.min.js"></script>
     </body>
     
 </html>
