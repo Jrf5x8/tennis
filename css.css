@@ -111,3 +111,8 @@ li{
     text-align: center;
     color: white;
 }
+
+#accordion{
+    width: 800px;
+    margin: 0 auto;
+}

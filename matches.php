@@ -4,7 +4,6 @@
                 header("Location: login.php");
                 exit;
             }
-            print '<a href="logout.php">Logout</a>';
             //print $_GET['tourney'];
                
         ?>
@@ -75,6 +74,7 @@
     </head>    
     <body>
         <div id="wrapper">
+           <div id="nav"><?php print '<a href="logout.php">Logout</a>';?></div>
             <div id="header"></div>
             <div id="loading"></div>  
             <div id="accordion">
