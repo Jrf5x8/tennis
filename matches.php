@@ -68,6 +68,8 @@
 
                    $(this).accordion("refresh");
                 });
+               
+               $('a').button();
            });
                
         </script>
