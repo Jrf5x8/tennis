@@ -77,7 +77,7 @@
             <a href="http://assets-ssl.usta.com/assets/1/1/LandingPageLeadImage/AA_and_P_courts.jpg" title="Apple" data-gallery>
                 <img src="images/thumbnails/AA_and_P_courts.gif" alt="Apple">
             </a>
-            <a href="https://www.youtube.com/watch?v=YdlnEWC-7Wo">
+            <video href="https://www.youtube.com/watch?v=YdlnEWC-7Wo">
                 <video src="https://www.youtube.com/watch?v=YdlnEWC-7Wo"></video>
             </a>
             
