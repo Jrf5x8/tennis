@@ -55,7 +55,7 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="navbar"><?php print '<a href="logout.php" id="logout">Logout</a>';
+            <div id="navbarlinks"><?php print '<a href="logout.php" id="logout">Logout</a>';
                 print '<span class="clicked"><a href="home.php">Home</a></span>';
                 print '<a href="tournamentMedia.php">Media</a>'; ?></div>       
             <div id="header"></div> 
