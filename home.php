@@ -55,10 +55,14 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="navbar"><div id="navbarlinks"><?php print '<a href="logout.php" id="logout">Logout</a>';
-                print '<span class="clicked"><a href="home.php">Home</a></span>';
-                print '<a href="tournamentMedia.php">Media</a>'; ?></div></div>      
-            <div id="header"></div> 
+            <div id="navbar">
+                <div id="navbarlinks">
+                    <span id="logout"><a href="login.php">Logout</a></span>
+                    <span class="homebutton"><a href="home.php">Home</a></span>
+                    <a href="tournamentMedia.php">Media</a>
+                </div>
+            </div>
+            
             <div id="loading"></div> 
             <div id="test"><ul></ul></div>        
         </div>
