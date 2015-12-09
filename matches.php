@@ -113,9 +113,10 @@
                             </tr>
                     </form>
                 </div>
-                <div id="footer"><h1>Web App by: Jack Fay</h1></div>  
 
         </div>
+        <div id="footer"><h1>Web App by: Jack Fay</h1></div>  
+
     </body>
 </html>
 
