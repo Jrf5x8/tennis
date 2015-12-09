@@ -23,13 +23,19 @@
             <div id="test">
                 
                    <form action="do_register.php" method="post">
+                      <div>
                        <label for="username">User name:</label>
                        <input type="text" id="username" name="username" class="ui-widget-content ui-corner-all" autofocus>
+                       </div>
                        <br>
+                       <div>
                        <label for="password">Password:</label>
                        <input type="password" id="password" name="password" class="ui-widget-content ui-corner-all" >
+                       </div>
                        <br>
-                       <input type="submit" value="Submit">"
+                       <div>
+                       <input type="submit" value="Submit">
+                       </div>
                    </form>
                     
             </div>     

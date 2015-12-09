@@ -45,6 +45,10 @@ html,body{
 	clear:both;
 }
 
+form{
+	color: white;
+}
+
 #test{
     text-align: center;
     padding-bottom: 80px;
