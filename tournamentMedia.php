@@ -21,7 +21,10 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css">
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script>
- 
+                            $(function(){
+                                $('a').button();
+                            });
+
         </script>
     </head>
     <body>
