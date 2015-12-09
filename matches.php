@@ -76,7 +76,9 @@
     </head>    
     <body>
         <div id="wrapper">
-           <div id="nav"><?php print '<a href="logout.php">Logout</a>';?></div>
+           <div id="nav"><?php print '<a href="logout.php">Logout</a>';
+                                print '<span class="clicked"><a href="home.php">Home</a></span>';
+                                print '<a href="tournamentMedia.php">Media</a>';?></div>
             <div id="header"></div>
             <div id="loading"></div>  
             <div id="accordion">
