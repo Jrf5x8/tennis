@@ -56,7 +56,7 @@
     <body>
         <div id="wrapper">
             <div id="navbar">
-                    <span id="logout"><a href="login.php">Logout</a></span>
+                    <span id="logout"><a href="logout.php">Logout</a></span>
                     <span class="homebutton"><a href="home.php">Home</a></span>
                     <a href="tournamentMedia.php">Media</a>
             </div>

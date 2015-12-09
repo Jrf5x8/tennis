@@ -33,7 +33,7 @@
     <body>
         <div id="wrapper">
             <div id="navbar">
-                    <span id="logout"><a href="login.php">Logout</a></span>
+                    <span id="logout"><a href="logout.php">Logout</a></span>
                     <a href="home.php">Home</a>
                     <span class="homebutton"><a href="tournamentMedia.php">Media</a></span>
             </div>
